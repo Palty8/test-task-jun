@@ -1,0 +1,174 @@
+.container {
+  display: grid;
+  grid-template-columns: [control-panel] 1fr [canvas] 5fr;
+  grid-template-rows: 1fr 1fr;
+ 
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+#canvas {
+  grid-column: canvas;
+  
+  border: 10px solid mediumturquoise; 
+}
+
+.control-panel {
+  grid-column: control-panel;
+
+  display: grid;
+  grid-template-rows: [pallete] 1fr [brush-width] 1fr [control-tools] 1fr;
+}
+
+.pallete {
+  grid-row: pallete;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  cursor: pointer;
+}
+
+.color--active {
+  border: 5px solid aqua;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.brush-width {
+  grid-row: brush-width;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  background-color: #fff;
+
+  cursor: pointer;
+}
+
+.width-value {
+  position: relative;
+
+  display: block;
+
+  font-size: 0;
+  border: 1px solid black;
+}
+
+.width--active {
+  background-color: lightgrey;
+}
+
+.width-value::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  
+  border-radius: 50%;
+  background-color: black;
+}
+
+.width-value--five::before  {
+  width: 5px;
+  height: 5px;
+}
+
+.width-value--ten::before  {
+  width: 10px;
+  height: 10px;
+}
+
+.width-value--fifteen::before  {
+  width: 15px;
+  height: 15px;
+}
+
+.width-value--twenty::before  {
+  width: 20px;
+  height: 20px;
+}
+
+.width-value--twentyfive::before  {
+  width: 25px;
+  height: 25px;
+}
+
+.width-value--thirty::before  {
+  width: 30px;
+  height: 30px;
+}
+
+.control-tools {
+  grid-row: [control-tools];
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.button {
+  display: block;
+
+  box-sizing: border-box;
+
+  padding: 20px;
+
+  font-size: 21px;
+  line-height: 120%;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background-color: #81b3d2;
+
+  cursor: pointer;
+}
+
+.button--download {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}

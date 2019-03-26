@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
+      <title>Paint</title>
+    </head>
+    <body>
+      <div class="container">
+        <div class="control-panel">
+          <div class="pallete">
+            <div class="color red color--active" tabindex="0"></div>
+            <div class="color green"></div>
+            <div class="color yellow"></div>
+            <div class="color black"></div>
+            <div class="color blue"></div>
+            <div class="color purple"></div>
+            <div class="color pink"></div>
+            <div class="color gray"></div>
+          </div>
+          <div class="brush-width">
+            <span class="width-value width-value--five width--active">5</span>
+            <span class="width-value width-value--ten">10</span>
+            <span class="width-value width-value--fifteen">15</span>
+            <span class="width-value width-value--twenty">20</span>
+            <span class="width-value width-value--twentyfive">25</span>
+            <span class="width-value width-value--thirty">30</span>
+          </div>
+          <div class="control-tools">
+            <button class="button button--clear">Clear</button>
+            <a href="#" class="button button--download">Download</a>
+          </div>
+        </div>
+        <canvas id="canvas" width="600" height="400"></canvas>
+      </div>
+      <script src="../dist/main.js"></script>
+    </body>
+  </html>
